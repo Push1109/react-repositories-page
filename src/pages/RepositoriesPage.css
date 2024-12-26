@@ -1,0 +1,106 @@
+/* Main Page Layout */
+.repositories-page {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.dashboard {
+  margin-left: 300px; /* Sidebar width */
+  flex-grow: 1;
+  overflow-y: auto; /* Ensures content scrolls if too long */
+  padding: 20px;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 24px;
+  padding-left: 1%;
+}
+
+.repository-count {
+  margin: 0px;
+  font-size: 14px;
+  color: gray;
+  padding-left: 1%;
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.refresh-button,
+.add-button {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border: grey;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.refresh-button:hover,
+.add-button:hover {
+  background-color: #4594ea;
+  border: grey;
+}
+
+.repository-list {
+  padding: 20px;
+}
+
+.repository-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.repository-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.repo-visibility {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+}
+
+.repository-details .details-inline {
+  display: flex; /* This ensures all items are aligned in a single line */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px; /* Adjusts spacing between items */
+  font-size: 14px;
+}
+
+.language,
+.memory,
+.last-update {
+  display: flex;
+  align-items: center;
+}
+
+.coin-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.Search{
+  padding-left: 1%;
+}

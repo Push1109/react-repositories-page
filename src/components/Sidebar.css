@@ -1,0 +1,88 @@
+.sidebar {
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.user-dropdown {
+  margin-bottom: 20px;
+}
+
+.user-button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.user-button:hover {
+  color: #000;
+}
+
+.menu-options,
+.bottom-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-options li,
+.bottom-options ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; /* Adjusted spacing */
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #555;
+}
+
+.menu-options li span,
+.bottom-options ul li span {
+  font-size: 14px;
+}
+
+/* Ensure bottom options are at the bottom without overflow */
+.bottom-options {
+  margin-top: auto; /* Forces the logout and support items to the bottom */
+  padding-top: 10px; /* Ensure proper spacing */
+}
+
+.bottom-options ul li {
+  margin-top: 10px; /* Add more space if needed between the last items */
+}
+
+.bottom-options ul {
+  position: absolute;
+  bottom: 45px; /* Aligns the bottom options properly */
+  width: 100%; /* Ensures it spans the full sidebar width */
+}
